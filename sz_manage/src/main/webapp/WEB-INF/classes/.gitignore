@@ -1,6 +1,6 @@
+/com/
 /application.development.properties
 /application.test.properties
-/com/
-/config/
 /logback.xml
 /mybatis/
+/config/
