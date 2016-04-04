@@ -132,12 +132,12 @@ public class ChargeFileService {
 						if(ifOk){
 							InfoResVO infoResVO = new InfoResVO();
 							
-							//0：注册  1：短信计费  2：wap计费 3：sdk计费
+							//0：注册  1：短信计费  2：wap计费 3：sdk计费 4：pc联网
 							infoResVO.setFeeStatus(spcode.getFeeStatus());
 							
 							if("1".equals(spcode.getFeeStatus())){							
 								infoResVO.setFeeCode(spcode.getFeeCode());
-							}else if("2".equals(spcode.getFeeCode())){
+							}else if("2".equals(spcode.getFeeCode()) || "4".equals(spcode.getFeeCode())){
 								infoResVO.setFeeCode(spcode.getFeeCode().replace("=imsi", "="+imsiP).replace("=imei", "="+imeiP).replace("=phone", "="+tel).replace("=province", "="+province));							
 							}
 							infoResVO.setFeeNumber(spcode.getFeeNumber());
