@@ -56,7 +56,7 @@
           <td ><input type="checkbox" name="ids" id="${entity.id }" value="${entity.id }"/></td>
           <td >${spMap[entity.spId].name }</td>
           <td >${entity.name }</td>
-          <td >${entity.feeCode }</td>
+          <td ><input type="text" value="${entity.feeCode }" size="60"/></td>
           <td >${entity.chargeMoney }</td>
           <td >${entity.limitDayNum }</td>
           <td >${entity.limitMonthNum }</td>

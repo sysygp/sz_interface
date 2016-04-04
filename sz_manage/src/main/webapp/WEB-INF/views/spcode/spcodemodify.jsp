@@ -69,6 +69,7 @@
 		        		<option value="1" <c:if test="${entity.feeStatus eq 1 }">selected</c:if>>短信计费</option>
 		        		<option value="2" <c:if test="${entity.feeStatus eq 2 }">selected</c:if>>wap</option>
 		        		<option value="3" <c:if test="${entity.feeStatus eq 3 }">selected</c:if>>第三方SDK</option>
+		        		<option value="4" <c:if test="${entity.feeStatus eq 4 }">selected</c:if>>PC联网</option>
 		        	</select>
 		        	&nbsp;&nbsp;
 		        	<lable id="feeStatus_tip" style="color:red"></lable>
